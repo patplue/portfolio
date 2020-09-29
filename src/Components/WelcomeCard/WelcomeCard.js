@@ -8,7 +8,7 @@ import "./WelcomeCard.css";
 const WelcomeCard = () => {
   return (
     <div>
-      <div id="Home">
+      <div className="welcomecardtop">
         <div id="container">
           <div className="makework">I Make</div>
           <div id="flip">

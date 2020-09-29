@@ -1,5 +1,5 @@
 #container {
-  color: #999;
+  color: black;
   text-transform: uppercase;
   font-size: 60px;
   line-height: 45px;
@@ -7,7 +7,8 @@
   width: 100%;
   bottom: 45%;
   display: block;
-  text-align: center;
+  text-align: left;
+  margin-left: 30px;
 }
 
 #flip {
@@ -89,13 +90,22 @@ p {
 }
 
 .makework {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 .aboutmepicture {
-  background-color: #FBAF00;
+  background: rgb(251, 175, 0);
+  background: linear-gradient(
+    -90deg,
+    rgba(251, 175, 0, 1) 0%,
+    rgba(251, 175, 0, 1) 25%,
+    rgba(251, 175, 0, 0) 85%
+  );
 }
 
-@media only screen and (max-width: 600px) {
+.welcomecardtop {
+}
+
+@media only screen and (max-width: 768px) {
   #container {
     color: #999;
     text-transform: uppercase;
@@ -144,5 +154,14 @@ p {
     100% {
       margin-top: 40px;
     }
+  }
+  .aboutmepicture {
+    background: rgb(251, 175, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(251, 175, 0, 1) 0%,
+      rgba(251, 175, 0, 1) 25%,
+      rgba(251, 175, 0, 0) 85%
+    );
   }
 }

@@ -1,13 +1,13 @@
 
 
-.animate{
+.animate {
   animation-duration: 3s;
   animation-name: blend-in;
 }
 
 @keyframes blend-in {
   from {
-  opacity: 0; 
+    opacity: 0;
   }
 
   to {
@@ -15,6 +15,6 @@
   }
 }
 
-.MuiBottomNavigationAction-root.Mui-selected{
-  color: #FBAF00 !important;
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: #fbaf00 !important;
 }

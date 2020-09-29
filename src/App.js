@@ -9,7 +9,7 @@ import { Container } from "@material-ui/core";
 
 const App = () => {
   return (
-    <div>
+    <div id="Home">
       <div className="nav">
         <SimpleBottomNavigation />
       </div>
