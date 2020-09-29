@@ -9,20 +9,22 @@ import { Container } from "@material-ui/core";
 
 const App = () => {
   return (
-    <div className="app">
-      <Container>
+    <div>
+      <div className="nav">
+        <SimpleBottomNavigation />
+      </div>
+      <div className="app">
         <WelcomeCard />
-      </Container>
-      <Container>
-        <Resume />
-      </Container>
-      <Container>
-        <Projects />
-      </Container>
-      <Container>
-        <Contact />
-      </Container>
-      <SimpleBottomNavigation />
+        <Container>
+          <Resume />
+        </Container>
+        <Container>
+          <Projects />
+        </Container>
+        <Container>
+          <Contact />
+        </Container>
+      </div>
     </div>
   );
 };

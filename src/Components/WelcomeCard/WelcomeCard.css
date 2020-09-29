@@ -86,12 +86,13 @@ p {
   width: 100%;
   bottom: 30px;
   font-size: 12px;
-  color: #999;
-  margin-top: 200px;
 }
 
 .makework {
   margin: 10px 0px;
+}
+.aboutmepicture {
+  background-color: #FBAF00;
 }
 
 @media only screen and (max-width: 600px) {

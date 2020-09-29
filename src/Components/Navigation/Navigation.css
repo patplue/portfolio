@@ -1,14 +1,5 @@
 
-.navcontainer{
-  position: absolute;
-  top: 89vh;
-}
 
-.navigation{
-  width: 100%;
-  position: sticky;
-  top: 89vh;
-}
 .animate{
   animation-duration: 3s;
   animation-name: blend-in;
@@ -22,4 +13,8 @@
   to {
     opacity: 100%;
   }
+}
+
+.MuiBottomNavigationAction-root.Mui-selected{
+  color: #FBAF00 !important;
 }
