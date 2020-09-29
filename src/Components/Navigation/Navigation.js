@@ -15,17 +15,17 @@ const SimpleBottomNavigation =()=> {
   
   return (
     <BottomNavigation
-      className="navigation animate"
+      className="navigation animate footer"
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
       showLabels
     >
-      <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-      <BottomNavigationAction label="Resume" icon={<AccountBoxIcon />} />
-      <BottomNavigationAction label="Projects" icon={<DeveloperBoardOutlinedIcon />} />
-      <BottomNavigationAction label="Contact" icon={<ContactMailOutlinedIcon />} />
+      <BottomNavigationAction label="Home" href="#Home" icon={<HomeIcon />} />
+      <BottomNavigationAction label="Resume" href="#Resume" icon={<AccountBoxIcon />} />
+      <BottomNavigationAction label="Projects" href="#Projects" icon={<DeveloperBoardOutlinedIcon />} />
+      <BottomNavigationAction label="Contact" href="#Contact" icon={<ContactMailOutlinedIcon />} />
     </BottomNavigation>
   );
 }

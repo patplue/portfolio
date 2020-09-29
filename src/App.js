@@ -1,11 +1,32 @@
 import React from "react";
-import SimpleBottomNavigation from './Components/Navigation/Navigation'
-import "./App.css"
+import WelcomeCard from "./Components/WelcomeCard/WelcomeCard";
+import Home from "./Components/Home/Home";
+import Resume from "./Components/Resume/Resume";
+import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
+import SimpleBottomNavigation from "./Components/Navigation/Navigation";
+import "./App.css";
+import { Container } from "@material-ui/core";
 
 const App = () => {
   return (
     <div className="app">
-      <SimpleBottomNavigation/>
+      <Container>
+        <WelcomeCard />
+      </Container>
+      <Container>
+        <Home />
+      </Container>
+      <Container>
+        <Resume />
+      </Container>
+      <Container>
+        <Projects />
+      </Container>
+      <Container>
+        <Contact />
+      </Container>
+      <SimpleBottomNavigation />
     </div>
   );
 };

@@ -1,7 +1,12 @@
 html {
   font-family: 'Raleway', sans-serif;
   background-color:lightgray;
-}
-.app {
+  scroll-behavior: smooth;
   height: 100vh;
 }
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
+}
+
