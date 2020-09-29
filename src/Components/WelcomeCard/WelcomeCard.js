@@ -25,7 +25,7 @@ const WelcomeCard = () => {
                 <div>Javascript</div>
               </div>
               <div>
-                <div>Ruby on Rails</div>
+                <div>RubyonRails</div>
               </div>
             </div>
             <div className="makework">Work</div>

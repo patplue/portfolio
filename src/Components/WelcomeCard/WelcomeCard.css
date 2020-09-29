@@ -93,3 +93,55 @@ p {
 .makework {
   margin: 10px 0px;
 }
+
+@media only screen and (max-width: 600px) {
+  #container {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    width: 100%;
+    bottom: 45%;
+    display: block;
+    text-align: center;
+  }
+  @keyframes show {
+    0% {
+      margin-top: -425px;
+    }
+    5% {
+      margin-top: -375px;
+    }
+    15% {
+      margin-top: -375px;
+    }
+    25% {
+      margin-top: -280px;
+    }
+    35% {
+      margin-top: -280px;
+    }
+    45% {
+      margin-top: -185px;
+    }
+    55% {
+      margin-top: -185px;
+    }
+    65% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -90px;
+    }
+    85% {
+      margin-top: 0px;
+    }
+    95% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: 40px;
+    }
+  }
+}
