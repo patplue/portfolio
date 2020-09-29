@@ -1,4 +1,14 @@
 
+.navcontainer{
+  position: absolute;
+  top: 89vh;
+}
+
+.navigation{
+  width: 99vw;
+  position: sticky;
+  top: 89vh;
+}
 .animate{
   animation-duration: 3s;
   animation-name: blend-in;

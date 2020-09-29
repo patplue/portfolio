@@ -1,6 +1,5 @@
 import React from "react";
 import WelcomeCard from "./Components/WelcomeCard/WelcomeCard";
-import Home from "./Components/Home/Home";
 import Resume from "./Components/Resume/Resume";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
@@ -13,9 +12,6 @@ const App = () => {
     <div className="app">
       <Container>
         <WelcomeCard />
-      </Container>
-      <Container>
-        <Home />
       </Container>
       <Container>
         <Resume />
