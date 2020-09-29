@@ -1,0 +1,19 @@
+.navigation{
+  position: sticky;
+  top: 90%;
+}
+
+.animate{
+  animation-duration: 3s;
+  animation-name: blend-in;
+}
+
+@keyframes blend-in {
+  from {
+  opacity: 0; 
+  }
+
+  to {
+    opacity: 100%;
+  }
+}

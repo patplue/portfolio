@@ -1,3 +1,7 @@
 html {
   font-family: 'Raleway', sans-serif;
+  background-color:lightgray;
+}
+.app {
+  height: 100vh;
 }

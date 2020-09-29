@@ -1,12 +1,11 @@
 import React from "react";
+import SimpleBottomNavigation from './Components/Navigation/Navigation'
 import "./App.css"
 
 const App = () => {
   return (
-    <div>
-      <h1 className="title">Helloooo</h1>
-      <p>This is writing<i> test</i> to see how this font looks.
-      </p>
+    <div className="app">
+      <SimpleBottomNavigation/>
     </div>
   );
 };

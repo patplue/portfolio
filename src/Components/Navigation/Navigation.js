@@ -1,0 +1,33 @@
+import React from "react";
+import {useState} from 'react';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import HomeIcon from '@material-ui/icons/HomeOutlined';
+import AccountBoxIcon from '@material-ui/icons/AccountBoxOutlined';
+import DeveloperBoardOutlinedIcon from '@material-ui/icons/DeveloperBoardOutlined';
+import ContactMailOutlinedIcon from '@material-ui/icons/ContactMailOutlined';
+
+import "./Navigation.css"
+
+
+const SimpleBottomNavigation =()=> {
+  const [value, setValue] = useState(0);
+  
+  return (
+    <BottomNavigation
+      className="navigation animate"
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      showLabels
+    >
+      <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+      <BottomNavigationAction label="Resume" icon={<AccountBoxIcon />} />
+      <BottomNavigationAction label="Projects" icon={<DeveloperBoardOutlinedIcon />} />
+      <BottomNavigationAction label="Contact" icon={<ContactMailOutlinedIcon />} />
+    </BottomNavigation>
+  );
+}
+
+export default SimpleBottomNavigation
