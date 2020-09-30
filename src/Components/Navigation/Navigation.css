@@ -1,5 +1,3 @@
-
-
 .animate {
   animation-duration: 3s;
   animation-name: blend-in;
@@ -14,7 +12,9 @@
     opacity: 100%;
   }
 }
-
+.MuiBottomNavigationAction-root {
+  color: black !important;
+}
 .MuiBottomNavigationAction-root.Mui-selected {
   color: #fbaf00 !important;
 }

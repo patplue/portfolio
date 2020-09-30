@@ -93,13 +93,7 @@ p {
   margin: 20px 0px;
 }
 .aboutmepicture {
-  background: rgb(251, 175, 0);
-  background: linear-gradient(
-    -90deg,
-    rgba(251, 175, 0, 1) 0%,
-    rgba(251, 175, 0, 1) 25%,
-    rgba(251, 175, 0, 0) 85%
-  );
+
 }
 
 .welcomecardtop {
@@ -155,13 +149,5 @@ p {
       margin-top: 40px;
     }
   }
-  .aboutmepicture {
-    background: rgb(251, 175, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(251, 175, 0, 1) 0%,
-      rgba(251, 175, 0, 1) 25%,
-      rgba(251, 175, 0, 0) 85%
-    );
-  }
+  
 }
