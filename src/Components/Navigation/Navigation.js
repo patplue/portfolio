@@ -8,39 +8,36 @@ import DeveloperBoardOutlinedIcon from "@material-ui/icons/DeveloperBoardOutline
 import ContactMailOutlinedIcon from "@material-ui/icons/ContactMailOutlined";
 
 import "./Navigation.css";
-import { green } from "@material-ui/core/colors";
 
 const SimpleBottomNavigation = () => {
   const [value, setValue] = useState(0);
 
   return (
-    <div className="navcontainer">
-      <BottomNavigation
-        className="navigation animate"
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-        showLabels
-      >
-        <BottomNavigationAction label="Home" href="#Home" icon={<HomeIcon />} />
-        <BottomNavigationAction
-          label="Resume"
-          href="#Resume"
-          icon={<AccountBoxIcon />}
-        />
-        <BottomNavigationAction
-          label="Projects"
-          href="#Projects"
-          icon={<DeveloperBoardOutlinedIcon />}
-        />
-        <BottomNavigationAction
-          label="Contact"
-          href="#Contact"
-          icon={<ContactMailOutlinedIcon />}
-        />
-      </BottomNavigation>
-    </div>
+    <BottomNavigation
+      className="navigation animate"
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      showLabels
+    >
+      <BottomNavigationAction label="Home" href="#Home" icon={<HomeIcon />} />
+      <BottomNavigationAction
+        label="Resume"
+        href="#Resume"
+        icon={<AccountBoxIcon />}
+      />
+      <BottomNavigationAction
+        label="Projects"
+        href="#Projects"
+        icon={<DeveloperBoardOutlinedIcon />}
+      />
+      <BottomNavigationAction
+        label="Contact"
+        href="#Contact"
+        icon={<ContactMailOutlinedIcon />}
+      />
+    </BottomNavigation>
   );
 };
 
