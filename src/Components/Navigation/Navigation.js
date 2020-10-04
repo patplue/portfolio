@@ -14,7 +14,7 @@ const SimpleBottomNavigation = () => {
 
   return (
     <BottomNavigation
-      className="navigation animate"
+      className="navigation"
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);

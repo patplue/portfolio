@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import WelcomeCard from "./Components/WelcomeCard/WelcomeCard";
 import Resume from "./Components/Resume/Resume";
 import Projects from "./Components/Projects/Projects";
@@ -10,37 +11,48 @@ import "./App.css";
 import { Container } from "@material-ui/core";
 
 const App = () => {
-
-  return (
-    <div>
-      <div className="progress-flex">
-        <ProgressBar
-          color="#000"
-          height={10}
-          direction="right"
-          position="top"
-          height={6}
-        />
+  let [loadingState, setLoadingState] = useState(false);
+  console.log(loadingState);
+  window.setTimeout(() => {
+    setLoadingState(true);
+    console.log(loadingState);
+  }, 3000);
+  if (loadingState === false) {
+    return (
+      <div>
+        <h1>Loading...</h1>
       </div>
-      <div id="Home">
-        <div className="nav">
-          <SimpleBottomNavigation />
+    );
+  } else {
+    return (
+      <div className="animate">
+        <div className="progress-flex">
+          <ProgressBar
+            color="#000"
+            height={10}
+            direction="right"
+            position="top"
+            height={6}
+          />
         </div>
-        <div className="app">
-          <WelcomeCard />
-          <Container>
+        <div id="Home">
+          <div className="nav">
+            <SimpleBottomNavigation />
+          </div>
+          <div className="app">
+            <WelcomeCard />
             <Resume />
-          </Container>
-          <Container>
-            <Projects />
-          </Container>
-          <Container>
-            <Contact />
-          </Container>
+            <Container>
+              <Projects />
+            </Container>
+            <Container>
+              <Contact />
+            </Container>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default App;
