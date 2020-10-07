@@ -95,13 +95,14 @@ p {
 
 @media only screen and (max-width: 768px) {
   #container {
-    color: #999;
+    color: black;
     text-transform: uppercase;
     font-size: 45px;
     line-height: 45px;
     font-weight: bold;
     bottom: 45%;
     display: block;
+    margin-top: 70%;
   }
   @keyframes show {
     0% {
