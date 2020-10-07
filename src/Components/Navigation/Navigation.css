@@ -1,7 +1,9 @@
-
 .MuiBottomNavigationAction-root {
   color: black !important;
 }
 .MuiBottomNavigationAction-root.Mui-selected {
   color: #fbaf00 !important;
 }
+@media only screen and (max-width: 768px) {
+}
+

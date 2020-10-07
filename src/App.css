@@ -1,10 +1,11 @@
 html {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
-  background-color: rgb(19, 18, 18);
+  background-color: #302c2c;
 }
 body {
   padding: 0;
+  margin: auto;
 }
 
 h1 {

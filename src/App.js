@@ -38,7 +38,7 @@ const App = () => {
     );
   } else {
     return (
-      <div className="animate">
+      <div id="Home" className="animate">
         <div className="progress-flex">
           <ProgressBar
             color="#fbaf00"
@@ -48,13 +48,17 @@ const App = () => {
             height={6}
           />
         </div>
-        <div id="Home">
+        <div>
           <div className="nav">
             <SimpleBottomNavigation />
           </div>
           <div className="app">
-            <Home />
-            <Resume />
+            <Container>
+              <Home />
+            </Container>
+            <Container>
+              <Resume />
+            </Container>
             <Container>
               <Projects />
             </Container>
