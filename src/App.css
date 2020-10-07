@@ -1,22 +1,29 @@
 html {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
-  background-color: #fbaf00;
+  background-color: rgb(19, 18, 18);
 }
 body {
   padding: 0;
 }
 
 h1 {
-  color: Black;
+  color: #fbaf00;
 }
 
 p {
   font-size: 15px;
-  color: black;
+  color: white;
+}
+.hidden{
+  opacity: 0;
 }
 .button-container{
+  margin-top: 40px;
   text-align: center;
+}
+.button-text{
+  color: #fbaf00;
 }
 .nav {
   position: sticky;

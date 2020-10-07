@@ -1,5 +1,5 @@
 #container {
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-size: 60px;
   line-height: 45px;
@@ -95,7 +95,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   #container {
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-size: 45px;
     line-height: 45px;

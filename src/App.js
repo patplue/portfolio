@@ -15,19 +15,23 @@ import { Container } from "@material-ui/core";
 const App = () => {
   let [loadingState, setLoadingState] = useState(false);
   const loadingStateSet = () => {
-    document.querySelector("#splash-group").classList.add("animate-out")
-    window.setTimeout(()=>{
+    document.querySelector("#splash-group").classList.add("animate-out");
+    window.setTimeout(() => {
       setLoadingState(true);
-    },1000)
+    }, 1000);
   };
 
   if (loadingState === false) {
+    setTimeout(() => {
+      document.querySelector(".button-container").classList.remove("hidden");
+      document.querySelector(".button-container").classList.add("animate");
+    }, 2000);
     return (
       <div id="splash-group">
         <SplashScreen />
-        <div className="button-container">
+        <div className="button-container hidden">
           <Button onClick={loadingStateSet}>
-            <p>&lt; tab to load my Portfolio &gt;</p>
+            <p className="button-text">tab to load my Portfolio</p>
           </Button>
         </div>
       </div>
@@ -37,7 +41,7 @@ const App = () => {
       <div className="animate">
         <div className="progress-flex">
           <ProgressBar
-            color="#000"
+            color="#fbaf00"
             height={10}
             direction="right"
             position="top"
