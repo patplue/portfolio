@@ -1,26 +1,35 @@
 import React from "react";
 import { useState } from "react";
-import WelcomeCard from "./Components/WelcomeCard/WelcomeCard";
+import SplashScreen from "./Components/SplashScreen/SplashScreen";
+import Home from "./Components/Home/Home";
 import Resume from "./Components/Resume/Resume";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import SimpleBottomNavigation from "./Components/Navigation/Navigation";
 import ProgressBar from "react-progressbar-on-scroll";
+import Button from "@material-ui/core/Button";
 
 import "./App.css";
 import { Container } from "@material-ui/core";
 
 const App = () => {
   let [loadingState, setLoadingState] = useState(false);
-  console.log(loadingState);
-  window.setTimeout(() => {
-    setLoadingState(true);
-    console.log(loadingState);
-  }, 3000);
+  const loadingStateSet = () => {
+    document.querySelector("#splash-group").classList.add("animate-out")
+    window.setTimeout(()=>{
+      setLoadingState(true);
+    },1000)
+  };
+
   if (loadingState === false) {
     return (
-      <div>
-        <h1>Loading...</h1>
+      <div id="splash-group">
+        <SplashScreen />
+        <div className="button-container">
+          <Button onClick={loadingStateSet}>
+            <p>&lt; tab to load my Portfolio &gt;</p>
+          </Button>
+        </div>
       </div>
     );
   } else {
@@ -40,7 +49,7 @@ const App = () => {
             <SimpleBottomNavigation />
           </div>
           <div className="app">
-            <WelcomeCard />
+            <Home />
             <Resume />
             <Container>
               <Projects />

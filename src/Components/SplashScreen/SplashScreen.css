@@ -6,8 +6,8 @@
   font-weight: bold;
   bottom: 45%;
   display: block;
-  text-align: left;
-  margin-left: 30px;
+  text-align: center;
+  margin-top: 15%;
 }
 
 #flip {
@@ -24,7 +24,7 @@
 }
 
 #flip div:first-child {
-  animation: show 6s linear infinite;
+  animation: show 5s linear infinite;
 }
 
 #flip div div {

@@ -1,15 +1,11 @@
 import React from "react";
-import AboutMe from "./Components/AboutMe";
-import PictureMe from "./Components/PictureMe";
-import { Grid } from "@material-ui/core";
+import "./SplashScreen.css";
 
-import "./WelcomeCard.css";
-
-const WelcomeCard = () => {
+const SplashScreen = () => {
   return (
     <div>
-      <div className="welcomecardtop">
-        <div id="container">
+      <div>
+        <div id="container" className="animate">
           <div className="makework">I Make</div>
           <div id="flip">
             <div>
@@ -31,16 +27,8 @@ const WelcomeCard = () => {
           <div className="makework">Work</div>
         </div>
       </div>
-      <Grid container spacing={0} className="aboutmepicture">
-        <Grid item lg={6} xs={12}>
-          <PictureMe />
-        </Grid>
-        <Grid item lg={6} xs={12}>
-          <AboutMe />
-        </Grid>
-      </Grid>
     </div>
   );
 };
 
-export default WelcomeCard;
+export default SplashScreen;
