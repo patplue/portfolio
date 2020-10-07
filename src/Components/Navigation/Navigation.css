@@ -4,6 +4,10 @@
 .MuiBottomNavigationAction-root.Mui-selected {
   color: #fbaf00 !important;
 }
+.nav {
+  position: fixed;
+  top: 93vh;
+  width: 100%;
+}
 @media only screen and (max-width: 768px) {
 }
-

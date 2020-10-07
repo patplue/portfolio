@@ -1,7 +1,7 @@
 html {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
-  background-color: #302c2c;
+  background-color: rgb(48, 44, 44);
 }
 body {
   padding: 0;
@@ -16,19 +16,16 @@ p {
   font-size: 15px;
   color: white;
 }
-.hidden{
+
+.hidden {
   opacity: 0;
 }
-.button-container{
+.button-container {
   margin-top: 40px;
   text-align: center;
 }
-.button-text{
+.button-text {
   color: #fbaf00;
-}
-.nav {
-  position: sticky;
-  top: 93vh;
 }
 .progress-count {
   position: sticky;

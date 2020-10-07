@@ -1,3 +1,22 @@
 .home-container {
   margin: 20px;
 }
+.profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: solid 2px white;
+  width: 125px;
+}
+.line {
+  position: relative;
+  height: 2px;
+
+  background-color: white;
+  top: 75px;
+  z-index: -5;
+}
+@media only screen and (max-width: 768px) {
+
+}

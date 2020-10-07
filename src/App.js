@@ -31,7 +31,7 @@ const App = () => {
         <SplashScreen />
         <div className="button-container hidden">
           <Button onClick={loadingStateSet}>
-            <p className="button-text">tab to load my Portfolio</p>
+            <p className="button-text">tap to load my Portfolio</p>
           </Button>
         </div>
       </div>
