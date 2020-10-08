@@ -1,5 +1,6 @@
 import React from "react";
-import "./Resume.css"
+import RadarChart from "./Components/RadarChart";
+import "./Resume.css";
 
 const Resume = () => {
   return (
@@ -14,7 +15,7 @@ const Resume = () => {
         inventore sapiente architecto. Mollitia, veritatis! Nihil iusto optio
         quasi incidunt maxime adipisci accusantium illo ut at!
       </p>
-      
+      <RadarChart />
     </div>
   );
 };
