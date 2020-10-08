@@ -9,6 +9,9 @@
   border: solid 2px white;
   width: 125px;
 }
+.about-me {
+  text-align: left;
+}
 .line {
   position: relative;
   height: 2px;
@@ -18,5 +21,4 @@
   z-index: -5;
 }
 @media only screen and (max-width: 768px) {
-
 }

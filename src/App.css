@@ -17,6 +17,10 @@ p {
   color: white;
 }
 
+.highlight {
+  color: #fbaf00;
+}
+
 .hidden {
   opacity: 0;
 }

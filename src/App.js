@@ -13,7 +13,7 @@ import "./App.css";
 import { Container } from "@material-ui/core";
 
 const App = () => {
-  let [loadingState, setLoadingState] = useState(false);
+  let [loadingState, setLoadingState] = useState(true);
   const loadingStateSet = () => {
     document.querySelector("#splash-group").classList.add("animate-out");
     window.setTimeout(() => {
