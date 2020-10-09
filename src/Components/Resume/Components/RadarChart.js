@@ -44,7 +44,7 @@ const RadarChart = () => {
     logigOrCodeBtnText = "See my Coding Skills";
     labels = [
       "Problem solving",
-      "Logical Thinking",
+      "Logic",
       "Teamplayer",
       "Dicksize",
       "Perosnality",
