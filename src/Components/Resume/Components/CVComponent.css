@@ -1,0 +1,39 @@
+.closed {
+  max-height: 0px;
+  opacity: 0;
+}
+.open-accordion {
+  animation-name: openAcc;
+  animation-duration: 0.5s;
+}
+.close-accordion {
+  animation-name: closeAcc;
+  animation-duration: 0.5s;
+}
+
+@keyframes openAcc {
+  0% {
+    max-height: 0px;
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    max-height: 150px;
+    opacity: 1;
+  }
+}
+@keyframes closeAcc {
+  0% {
+    max-height: 150px;
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    max-height: 0px;
+    opacity: 0;
+  }
+}
