@@ -13,7 +13,7 @@ import "./App.css";
 import { Container } from "@material-ui/core";
 
 const App = () => {
-  let [loadingState, setLoadingState] = useState(true);
+  const [loadingState, setLoadingState] = useState(false);
   const loadingStateSet = () => {
     document.querySelector("#splash-group").classList.add("animate-out");
     window.setTimeout(() => {
@@ -42,7 +42,6 @@ const App = () => {
         <div className="progress-flex">
           <ProgressBar
             color="#fbaf00"
-            height={10}
             direction="right"
             position="top"
             height={6}
