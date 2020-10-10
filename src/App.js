@@ -48,9 +48,6 @@ const App = () => {
           />
         </div>
         <div>
-          <div className="nav">
-            <SimpleBottomNavigation />
-          </div>
           <div className="app">
             <Container>
               <Home />
@@ -64,6 +61,9 @@ const App = () => {
             <Container>
               <Contact />
             </Container>
+            <div className="nav">
+              <SimpleBottomNavigation />
+            </div>
           </div>
         </div>
       </div>
