@@ -23,7 +23,9 @@ p {
 .highlight {
   color: #fbaf00;
 }
-
+.display-none {
+  display: none;
+}
 .hidden {
   opacity: 0;
 }
