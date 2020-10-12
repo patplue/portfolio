@@ -1,18 +1,23 @@
 import React from "react";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./ContactForm.css";
 import TextField from "@material-ui/core/TextField";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { ErrorSharp } from "@material-ui/icons";
+import emailjs from 'emailjs-com';
 
 const ContactForm = (props) => {
   const { register, handleSubmit, errors } = useForm();
-  const [errorState, setErrorState] = useState(false);
   const onSubmit = (data) => {
     console.log(data);
+    emailjs.send(process.env.SERVICE_ACCOUNT, process.env.MAIL_TEMPLATE, data, process.env.USER_ID)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+      console.log('FAILED...', error);
+    });
   };
+
   const theme = createMuiTheme({
     palette: {
       text: {
@@ -44,24 +49,33 @@ const ContactForm = (props) => {
           onSubmit={handleSubmit(onSubmit)}
         >
           <TextField
+            error={errors.name}
             label="Name"
             name="name"
             fullWidth
-            inputRef={register({ required: true })}
+            inputRef={register({ required: true,pattern: /^[A-Za-z]+$/i })}
           />
-          {errors.name && (
+          {errors.name?.type === "required"  && (
             <p className="error-text">Please tell me who you are</p>
           )}
+          {errors.name?.type === "pattern"  && (
+            <p className="error-text">Please only use human language</p>
+          )}
           <TextField
+            error={errors.email}
             label="Email"
             name="email"
             fullWidth
-            inputRef={register({ required: true })}
+            inputRef={register({ required: true,pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })}
           />
-          {errors.email && (
-            <p className="error-text">Please tell me who your email so I can answer</p>
+          {errors.email?.type === "required" && (
+            <p className="error-text">Please tell me your email so I can answer</p>
+          )}
+          {errors.email?.type === "pattern" && (
+            <p className="error-text">Please tell me a real email </p>
           )}
           <TextField
+            error={errors.message}
             label="Message"
             name="message"
             fullWidth
