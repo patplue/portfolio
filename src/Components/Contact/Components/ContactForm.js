@@ -5,19 +5,59 @@ import TextField from "@material-ui/core/TextField";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const ContactForm = (props) => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors,reset } = useForm();
+  const serviceAccount = process.env.REACT_APP_SERVICE_ACCOUNT
+  const mailTemplate = process.env.REACT_APP_MAIL_TEMPLATE
+  const userId = process.env.REACT_APP_USER_ID
+  const toastifyWorking=()=>{
+    toast.dark('Fetching a carrier pigeon', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      className: 'toast'
+      });
+  }
+  const toastifySuccess=()=>{
+    toast.success('I got your message i will get back you ASAP!', {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: 'toast',
+    });
+  }
+  
+  const toastifyFail=()=>{
+    toast.error('Something went wrong, sorry! Please try again!', {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: 'toast',
+    });
+  }
   const onSubmit = (data) => {
-    console.log(data);
-    emailjs.send(process.env.SERVICE_ACCOUNT, process.env.MAIL_TEMPLATE, data, process.env.USER_ID)
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-      console.log('FAILED...', error);
+    toastifyWorking()
+    emailjs.send(serviceAccount, mailTemplate, data, userId)
+    .then(function() {
+      toastifySuccess()
+      reset()
+    }, function() {
+      toastifyFail()
     });
   };
-
   const theme = createMuiTheme({
     palette: {
       text: {
@@ -53,7 +93,7 @@ const ContactForm = (props) => {
             label="Name"
             name="name"
             fullWidth
-            inputRef={register({ required: true,pattern: /^[A-Za-z]+$/i })}
+            inputRef={register({ required: true,pattern: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u })}
           />
           {errors.name?.type === "required"  && (
             <p className="error-text">Please tell me who you are</p>
@@ -97,6 +137,7 @@ const ContactForm = (props) => {
           </Button>
         </form>
       </ThemeProvider>
+      <ToastContainer />
     </div>
   );
 };

@@ -13,3 +13,6 @@
 .error-text {
   color: red;
 }
+.toast {
+  border-radius: 15px;
+}

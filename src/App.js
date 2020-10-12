@@ -13,7 +13,7 @@ import "./App.css";
 import { Container } from "@material-ui/core";
 
 const App = () => {
-  const [loadingState, setLoadingState] = useState(true);
+  const [loadingState, setLoadingState] = useState(false);
   const loadingStateSet = () => {
     document.querySelector("#splash-group").classList.add("animate-out");
     window.setTimeout(() => {
@@ -23,13 +23,14 @@ const App = () => {
 
   if (loadingState === false) {
     setTimeout(() => {
+      document.querySelector(".button-container").classList.remove("display-none");
       document.querySelector(".button-container").classList.remove("hidden");
       document.querySelector(".button-container").classList.add("animate");
     }, 2000);
     return (
       <div id="splash-group">
         <SplashScreen />
-        <div className="button-container hidden">
+        <div className="button-container hidden display-none">
           <Button onClick={loadingStateSet}>
             <p className="button-text">tap to load my Portfolio</p>
           </Button>
