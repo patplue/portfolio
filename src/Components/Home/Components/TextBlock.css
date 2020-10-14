@@ -1,0 +1,91 @@
+.dev-headline {
+  text-align: left;
+}
+.team-headline {
+  text-align: center;
+}
+.manager-headline {
+  text-align: right;
+}
+.dev-about-me {
+  text-align: left;
+  width: 60%;
+}
+.team-about-me {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.manager-about-me {
+  float: right;
+  text-align: right;
+  width: 60%;
+}
+.dev-block {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: minmax(350px, 75%) 1fr;
+}
+.team-block{
+  margin-top: 5em;
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+.manager-block {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: minmax(50px, 25%) 1fr;
+}
+
+.line-right-1 {
+  position: relative;
+  top: 20px;
+  background-color: white;
+  width: 60px;
+  height: 2.5px;
+  transform: rotate(45deg);
+  transition: 500ms;
+}
+.line-right-2 {
+  position: relative;
+  top: 59px;
+  background-color: white;
+  width: 60px;
+  height: 2.5px;
+  transform: rotate(-45deg);
+  transition: 500ms;
+}
+.arrow-right {
+  height: 100px;
+  width: 40px;
+  margin: auto;
+}
+.arrow-right:hover > * {
+  background-color: #fbaf00;
+}
+.line-left-1 {
+  position: relative;
+  top: 20px;
+  background-color: white;
+  width: 60px;
+  height: 2.5px;
+  transform: rotate(-45deg);
+  transition: 500ms;
+}
+.line-left-2 {
+  position: relative;
+  top: 59px;
+  background-color: white;
+  width: 60px;
+  height: 2.5px;
+  transform: rotate(45deg);
+  transition: 500ms;
+}
+.arrow-left {
+  height: 100px;
+  width: 40px;
+  margin: auto;
+}
+.arrow-left:hover > * {
+  background-color: #fbaf00;
+}

@@ -1,3 +1,6 @@
+.home-text-block{
+  margin: auto 0 auto 0;
+}
 .home-container {
   min-height: 100vh;
   margin: 20px;
@@ -9,9 +12,6 @@
   border-radius: 50%;
   border: solid 2px white;
   width: 125px;
-}
-.about-me {
-  text-align: left;
 }
 .line {
   position: relative;

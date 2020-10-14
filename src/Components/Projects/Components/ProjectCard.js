@@ -1,19 +1,14 @@
 import React from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 import "./ProjectCard.css";
-import pic from '../../../Pictures/profile.jpg';
 
 const ProjectCard = (props) => {
   return (
     <div>
       <Flippy
-        flipOnHover={false} // default false
-        flipOnClick={true} // default false
-        flipDirection="horizontal" // horizontal or vertical
-        // to use toggle method like this.flippy.toggle()
-        // if you pass isFlipped prop component will be controlled component.
-        // and other props, which will go to div
-       style={{ width: "100%" }} /// these are optional style, it is not necessary
+        flipOnClick={true}
+        flipDirection="horizontal" 
+        style={{ width: "100%" }}
       >
         <FrontSide
         >

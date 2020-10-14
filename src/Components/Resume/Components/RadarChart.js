@@ -21,7 +21,7 @@ const RadarChart = () => {
     labels = ["HTML", "CSS", "JavaScript", "React.js", "Rails"];
     datasets = [
       {
-        label: "Months of Experince",
+        label: "Level of Experince",
         backgroundColor: ["rgba(251, 175, 0,0)"],
         borderColor: [
           "rgba(251, 175, 0,1)",
@@ -31,12 +31,12 @@ const RadarChart = () => {
           "rgba(251, 175, 0,1)",
         ],
         borderWidth: 3,
-        data: [10, 10, 7, 5, 9],
+        data: [8, 6, 7, 5, 3],
       },
     ];
     ticks = {
       suggestedMin: 0,
-      suggestedMax: 12,
+      suggestedMax: 10,
       stepSize: 1,
       showLabelBackdrop: false,
     };

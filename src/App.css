@@ -1,25 +1,22 @@
 html {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
-  background-color: rgb(48, 44, 44);
+  background-color: #302c2c;
 }
 body {
   padding: 0;
   margin: auto;
 }
-
 h1 {
   color: #fbaf00;
 }
 h3 {
   color: white;
 }
-
 p {
   font-size: 15px;
   color: white;
 }
-
 .highlight {
   color: #fbaf00;
 }
@@ -65,5 +62,16 @@ p {
 
   to {
     opacity: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  p{
+    font-size: 13px;
   }
 }

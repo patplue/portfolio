@@ -1,0 +1,12 @@
+.MuiMobileStepper-root {
+  background: #302c2c !important;
+}
+
+.MuiMobileStepper-dotActive {
+  background: #fbaf00 !important;
+}
+.MuiMobileStepper-dot {
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 5px !important;
+}
