@@ -2,6 +2,8 @@ import React from "react";
 import "./Projects.css";
 import ProjectCard from "./Components/ProjectCard";
 import { Grid } from "@material-ui/core";
+import alma from '../../Pictures/alma.jpg';
+import seeql from "../../Pictures/seeql.jpg"
 
 const Projects = () => {
   return (
@@ -21,10 +23,10 @@ const Projects = () => {
       </p>
       <Grid container spacing={3}>
         <Grid item lg={6} xs={12}>
-          <ProjectCard location="Alma" info="something about the job" />
+        <ProjectCard location="Alma" info="something about the job" pic={alma} />
         </Grid>
         <Grid item lg={6} xs={12}>
-          <ProjectCard location="SeeQL" info="something about the job" />
+        <ProjectCard location="SeeQL" info="something about the job" pic={seeql}/>
         </Grid>
       </Grid>
     </div>

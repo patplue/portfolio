@@ -1,6 +1,30 @@
-.flippy-container {
-  margin: auto;
+.flippy-card {
+  padding: 0;
+  border: #fbaf00 solid 2px;
 }
-@media only screen and (max-width: 768px) {
-
+.card-img {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  max-width: 80%;
+  margin-bottom: -4px;
+}
+.sidebar-container {
+  display: grid;
+  grid-template-columns: minmax(250px, 60%) 1fr;
+}
+.sidebar {
+  background-color: white;
+}
+.desc-section p {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(48, 44, 44);
+}
+.card-desc {
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 20px;
+  z-index: 5;
 }

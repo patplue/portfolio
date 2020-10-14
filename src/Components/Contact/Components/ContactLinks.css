@@ -1,0 +1,12 @@
+.contact-links-container {
+  margin-top: 40px;
+}
+.logo-link {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 15px;
+}
+.gh-logo {
+  filter: invert();
+  height: 40px;
+}

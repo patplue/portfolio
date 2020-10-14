@@ -42,7 +42,7 @@ const RadarChart = () => {
     };
   } else {
     logigOrCodeBtnText = "See my Coding Skills";
-    labels = ["Problem solving", "Logic", "Teamplayer", "Dicksize", "Me"];
+    labels = ["Problem solving", "Logic", "Teamplayer", "Communication", "Me"];
     datasets = [
       {
         label: "Level",

@@ -1,6 +1,7 @@
 import React from "react";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 import "./ProjectCard.css";
+import pic from '../../../Pictures/profile.jpg';
 
 const ProjectCard = (props) => {
   return (
@@ -12,14 +13,21 @@ const ProjectCard = (props) => {
         // to use toggle method like this.flippy.toggle()
         // if you pass isFlipped prop component will be controlled component.
         // and other props, which will go to div
-        style={{ width: "100%", height: "150px" }} /// these are optional style, it is not necessary
+       style={{ width: "100%" }} /// these are optional style, it is not necessary
       >
         <FrontSide
-          style={{
-            backgroundColor: "#41669d",
-          }}
         >
-          <p>{props.location}</p>
+        <div className="sidebar-container">
+          <div className="front-side-container">
+            <div className="sidebar" contenteditable>
+              <h3 className="card-desc">{props.location}</h3>
+              <img src={props.pic} alt="placeholder" className="card-img"/>
+            </div>
+          </div>
+          <div className="desc-section" contenteditable>
+            <p>Quick explanation about the project. Tap me to see more.</p>
+          </div>
+        </div>    
         </FrontSide>
         <BackSide style={{ backgroundColor: "#175852" }}>
           <p>{props.info}</p>
