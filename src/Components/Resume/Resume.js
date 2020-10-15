@@ -15,7 +15,7 @@ const Resume = () => {
         closed="closed"
         id="Waldgourmet"
         location="Waldgourmet GmbH"
-        position="Front-End Dev"
+        position="Front-End Developer"
         description={[
           "As the Front-End Dev i was responsible for the",
           <span className="highlight"> look</span>,
@@ -23,8 +23,28 @@ const Resume = () => {
         ]}
         dates="2020/04-Today"
       />
-      <CVComponent location="HelloFresh" id="Hellofresh" closed="closed" />
-      <CVComponent location="your mom" id="mom" closed="closed" />
+      <CVComponent
+        closed="closed"
+        id="Hellofresh" 
+        location="HelloFresh SE"
+        position="It-Support Engineer & Office Manager"
+        description={[
+          "As the Front-End Dev i was responsible for the",
+          <span className="highlight"> look</span>,
+          " and feel of the projects when it cam to user interactions",
+        ]}
+        dates="2020/04-Today"/>
+      <CVComponent 
+        closed="closed" 
+        id="GameStop"
+        location="GameStop Deutschland GmbH"
+        position="Store Manager" 
+        description={[
+          "As the Front-End Dev i was responsible for the",
+          <span className="highlight"> look</span>,
+          " and feel of the projects when it cam to user interactions",
+        ]}
+        dates="2020/04-Today" />
       <RadarChart />
     </div>
   );

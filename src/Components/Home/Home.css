@@ -1,9 +1,9 @@
-.home-text-block{
+.home-text-block {
   margin: auto 0 auto 0;
 }
 .home-container {
-  min-height: 100vh;
   margin: 20px;
+  min-height: 85vh;
 }
 .profile-img {
   display: block;
