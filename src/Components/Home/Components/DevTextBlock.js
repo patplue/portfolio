@@ -16,14 +16,15 @@ const DevTextBlock = (props) => {
             <span className="highlight"> Ruby on Rails</span>. 
             During this period I fell in love with 
             <span className="highlight"> Front-End Development</span>, since then
-            I did everything to learn more about this field. I started working for a Start-Up being
-            being in charge of the entire <span className="highlight"> Front-End Development </span>
-            I picked up the pace quick by adding <span className="highlight"> React</span> to my arsenal.
+            I did everything to learn more about this field. In April 2020 I started working for a Start-Up being
+            in charge of the entire <span className="highlight"> Front-End Development </span>
+            I picked up the pace quickly by adding <span className="highlight"> React</span> to my arsenal. I use every chance I get to learn
+            something new and practice my <span className="highlight">HTML</span>,<span className="highlight"> CSS</span> and <span className="highlight">JavaScript</span> skills.
           </p>
         </div>
       </div>
       <div className="arrow-container" onClick={props.next}>
-        <div className="arrow-right">
+        <div className="arrow-right slide-right">
           <div className="line-right-1"></div>
           <div className="line-right-2"></div>
         </div>

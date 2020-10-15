@@ -6,7 +6,7 @@ const TeamTextBlock = (props) => {
     <div>
       <div className="team-block animate">
         <div className="arrow-container" onClick={props.back}>
-          <div className="arrow-left" >
+          <div className="arrow-left slide-left" >
             <div className="line-left-1"></div>
             <div className="line-left-2"></div>
           </div>
@@ -17,19 +17,18 @@ const TeamTextBlock = (props) => {
             <p>
             Welcome to my portfolio,<br/>
             <br/>
-            At the beginning of 2020 I atteded the <span className="highlight"> Le Wagon </span> 
-            Bootcamp and within 3 Months I learned how to work with 
-            <span className="highlight"> Ruby on Rails</span>. 
-            During this period I fell in love with 
-            <span className="highlight"> Front-End Development</span>, since then
-            I did everything to learn more about this field. I started working for a Start-Up being
-            being in charge of the entire <span className="highlight"> Front-End Development </span>
-            I picked up the pace quick by adding <span className="highlight"> React</span> to my arsenal.
+            Over the course of my professional career I worked in a multitude of <span className="highlight"> Teams</span>.
+            Each functioning differently since I believe the climate of a<span className="highlight"> Team</span> is a result 
+            of different individuals trying to achieve the same<span className="highlight"> Goal</span>. 
+            So to be a part of a<span className="highlight"> Team</span> I actively<span className="highlight"> Communicate </span>
+            with my collaborators to achieve an understanding of the common <span className="highlight"> Goal</span> as well as the personal views 
+            towards the project. I always keep the <span className="highlight"> Goal</span> in focus but I never let my <span className="highlight"> Team </span> 
+            out of sight. Because only a good functioning <span className="highlight"> Team</span> can exceed expectations.
             </p>
           </div>
         </div>
         <div className="arrow-container" onClick={props.next}>
-          <div className="arrow-right">
+          <div className="arrow-right slide-right">
             <div className="line-right-1"></div>
             <div className="line-right-2"></div>
           </div>
