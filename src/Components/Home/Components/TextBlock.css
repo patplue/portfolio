@@ -127,18 +127,20 @@
 
 @media only screen and (max-width: 767px) {
   .arrow-container {
-    visibility: hidden;
+    display: none;
   }
   .dev-block {
-    margin-top: 6.5em;
+    margin-top: -10px;
     display: block;
     width: 100%;
   }
   .team-block {
+    margin-top: -10px;
     display: block;
     width: 100%;
   }
   .manager-block {
+    margin-top: -10px;
     display: block;
     width: 100%;
   }

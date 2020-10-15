@@ -41,7 +41,7 @@ export default function ProgressStepper() {
   } else if (activeStep === 1){
     content = (<TeamTextBlock next={handleNext} back={handleBack}/>)
   } else if(activeStep=== 2){
-    content = (<ManagerTextBlock back={handleBack} />)
+    content = (<ManagerTextBlock back={handleBack}/>)
   }
 
   return (
