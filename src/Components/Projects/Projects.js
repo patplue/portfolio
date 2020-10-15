@@ -2,13 +2,13 @@ import React from "react";
 import "./Projects.css";
 import ProjectCard from "./Components/ProjectCard";
 import { Grid } from "@material-ui/core";
-import alma from '../../Pictures/alma.jpg';
-import seeql from "../../Pictures/seeql.jpg"
+import alma from "../../Pictures/alma.jpg";
+import seeql from "../../Pictures/seeql.jpg";
 
 const Projects = () => {
   return (
     <div id="Projects">
-      <hr/>
+      <hr />
       <h1>Projects</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
@@ -24,10 +24,18 @@ const Projects = () => {
       </p>
       <Grid container spacing={3}>
         <Grid item lg={6} xs={12}>
-        <ProjectCard location="Alma" info="something about the job" pic={alma} />
+          <ProjectCard
+            location="Alma"
+            info="something about the job"
+            pic={alma}
+          />
         </Grid>
         <Grid item lg={6} xs={12}>
-        <ProjectCard location="SeeQL" info="something about the job" pic={seeql}/>
+          <ProjectCard
+            location="SeeQL"
+            info="something about the job"
+            pic={seeql}
+          />
         </Grid>
       </Grid>
     </div>

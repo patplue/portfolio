@@ -23,7 +23,9 @@ const App = () => {
 
   if (loadingState === false) {
     setTimeout(() => {
-      document.querySelector(".button-container").classList.remove("display-none");
+      document
+        .querySelector(".button-container")
+        .classList.remove("display-none");
       document.querySelector(".button-container").classList.remove("hidden");
       document.querySelector(".button-container").classList.add("animate");
     }, 2000);

@@ -42,7 +42,13 @@ const RadarChart = () => {
     };
   } else {
     logigOrCodeBtnText = "See my Coding Skills";
-    labels = ["Problem solving", "Critical Thinking", "Teamplayer", "Communication", "Self-Awareness"];
+    labels = [
+      "Problem solving",
+      "Critical Thinking",
+      "Teamplayer",
+      "Communication",
+      "Self-Awareness",
+    ];
     datasets = [
       {
         label: "Level of Confidence",

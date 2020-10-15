@@ -1,14 +1,14 @@
-import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import MobileStepper from '@material-ui/core/MobileStepper';
-import Button from '@material-ui/core/Button';
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import "./ProgressStepper.css"
+import React from "react";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import MobileStepper from "@material-ui/core/MobileStepper";
+import Button from "@material-ui/core/Button";
+import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
+import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
+import "./ProgressStepper.css";
 
-import DevTextBlock from './DevTextBlock';
-import TeamTextBlock from './TeamTextBlock';
-import ManagerTextBlock from './ManagerTextBlock';
+import DevTextBlock from "./DevTextBlock";
+import TeamTextBlock from "./TeamTextBlock";
+import ManagerTextBlock from "./ManagerTextBlock";
 
 const useStyles = makeStyles({
   root: {
@@ -16,9 +16,9 @@ const useStyles = makeStyles({
     flexGrow: 1,
     marginTop: 20,
   },
-  text:{
-    color: "white"
-  }
+  text: {
+    color: "white",
+  },
 });
 
 export default function ProgressStepper() {
@@ -35,13 +35,12 @@ export default function ProgressStepper() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-
-  if(activeStep === 0){
-    content = (<DevTextBlock next={handleNext}/>)
-  } else if (activeStep === 1){
-    content = (<TeamTextBlock next={handleNext} back={handleBack}/>)
-  } else if(activeStep=== 2){
-    content = (<ManagerTextBlock back={handleBack}/>)
+  if (activeStep === 0) {
+    content = <DevTextBlock next={handleNext} />;
+  } else if (activeStep === 1) {
+    content = <TeamTextBlock next={handleNext} back={handleBack} />;
+  } else if (activeStep === 2) {
+    content = <ManagerTextBlock back={handleBack} />;
   }
 
   return (
@@ -55,12 +54,20 @@ export default function ProgressStepper() {
         nextButton={
           <Button size="small" onClick={handleNext} disabled={activeStep === 2}>
             Next
-            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+            {theme.direction === "rtl" ? (
+              <KeyboardArrowLeft />
+            ) : (
+              <KeyboardArrowRight />
+            )}
           </Button>
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+            {theme.direction === "rtl" ? (
+              <KeyboardArrowRight />
+            ) : (
+              <KeyboardArrowLeft />
+            )}
             Back
           </Button>
         }

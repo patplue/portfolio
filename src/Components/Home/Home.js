@@ -1,6 +1,6 @@
 import React from "react";
 import pic from "../../Pictures/profile.jpg";
-import ProgressStepper from './Components/ProgressStepper';
+import ProgressStepper from "./Components/ProgressStepper";
 
 import "./Home.css";
 
@@ -12,7 +12,6 @@ const Home = () => {
         <img src={pic} alt="just me" className="profile-img" />
       </div>
       <ProgressStepper />
-      
     </div>
   );
 };

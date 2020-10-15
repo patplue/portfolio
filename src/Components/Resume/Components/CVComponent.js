@@ -13,7 +13,6 @@ const CVComponent = (props) => {
     if (openAccordion === false) {
       document.querySelector(`.${props.id}`).classList.remove("closed");
       document.querySelector(`.${props.id}`).classList.add("open-accordion");
-
     } else {
       document.querySelector(`.${props.id}`).classList.add("close-accordion");
       document.querySelector(`.${props.id}`).classList.remove("open-accordion");
@@ -27,12 +26,26 @@ const CVComponent = (props) => {
   };
   return (
     <div>
-      <h3 onClick={OpenAccordionSet} className="cv-headline">• {props.location} <i class="Chevron"></i></h3>
+      <h3 onClick={OpenAccordionSet} className="cv-headline">
+        • {props.location} <i class="Chevron"></i>
+      </h3>
       <div className={props.id + " " + props.closed}>
         <div className="cv-block">
-              <p><span className="highlight">• </span><strong>Position: </strong> <span className="highlight">{props.position}</span></p>
-              <p><span className="highlight">• </span><strong>Description: </strong>{props.description}</p>
-              <p><span className="highlight">• </span><strong>Time of Employment:</strong>{props.dates}</p>
+          <p>
+            <span className="highlight">• </span>
+            <strong>Position: </strong>{" "}
+            <span className="highlight">{props.position}</span>
+          </p>
+          <p>
+            <span className="highlight">• </span>
+            <strong>Description: </strong>
+            {props.description}
+          </p>
+          <p>
+            <span className="highlight">• </span>
+            <strong>Time of Employment:</strong>
+            {props.dates}
+          </p>
         </div>
       </div>
     </div>

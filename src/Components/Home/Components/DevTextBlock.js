@@ -1,25 +1,35 @@
-import React from 'react';
-import "./TextBlock.css"
+import React from "react";
+import "./TextBlock.css";
 
 const DevTextBlock = (props) => {
-  return(
+  return (
     <div>
       <div className="dev-block animate">
         <div className="home-text-block">
-          <h1 className="dev-headline">Hi, I'm Patrick Plue.<br/> A Front-End Developer.</h1>
+          <h1 className="dev-headline">
+            Hi, I'm Patrick Plue.
+            <br /> A Front-End Developer.
+          </h1>
           <div className="dev-about-me">
             <p>
-              Welcome to my portfolio,<br/>
-              <br/>
-              At the beginning of 2020 I atteded the <span className="highlight"> Le Wagon </span> 
-              Bootcamp and within 3 Months I learned how to work with 
-              <span className="highlight"> Ruby on Rails</span>. 
-              During this period I fell in love with 
-              <span className="highlight"> Front-End Development</span>, since then
-              I did everything to learn more about this field. In April 2020 I started working for a Start-Up being
-              in charge of the entire <span className="highlight"> Front-End Development </span>
-              I picked up the pace quickly by adding <span className="highlight"> React</span> to my arsenal. I use every chance I get to learn
-              something new and practice my <span className="highlight">HTML</span>,<span className="highlight"> CSS</span> and <span className="highlight">JavaScript</span> skills.
+              Welcome to my portfolio,
+              <br />
+              <br />
+              At the beginning of 2020 I atteded the{" "}
+              <span className="highlight"> Le Wagon </span>
+              Bootcamp and within 3 Months I learned how to work with
+              <span className="highlight"> Ruby on Rails</span>. During this
+              period I fell in love with
+              <span className="highlight"> Front-End Development</span>, since
+              then I did everything to learn more about this field. In April
+              2020 I started working for a Start-Up being in charge of the
+              entire <span className="highlight"> Front-End Development </span>I
+              picked up the pace quickly by adding{" "}
+              <span className="highlight"> React</span> to my arsenal. I use
+              every chance I get to learn something new and practice my{" "}
+              <span className="highlight">HTML</span>,
+              <span className="highlight"> CSS</span> and{" "}
+              <span className="highlight">JavaScript</span> skills.
             </p>
           </div>
         </div>
@@ -31,6 +41,6 @@ const DevTextBlock = (props) => {
         </div>
       </div>
     </div>
-  )
-}
-export default DevTextBlock
+  );
+};
+export default DevTextBlock;

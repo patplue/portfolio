@@ -44,8 +44,7 @@ const SimpleBottomNavigation = (props) => {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
-    >
+      showLabels>
       <BottomNavigationAction
         id="home"
         label="Home"
