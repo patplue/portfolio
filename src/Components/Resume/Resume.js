@@ -8,8 +8,8 @@ const Resume = () => {
     <div id="Resume">
       <h1>Resume</h1>
       <p>
-        Resume Content introduction text about where i worked so far an so on
-        but know lets get to the littel cv section
+        So you are able to get an overview of my <span className="highlight"> Skillset</span> here are some of my previous Employments. If this caught your Interest
+        please send me a <a href="#Contact" className="highlight">Message</a> and I will gladly provide my CV and talk about it with you. 
       </p>
       <CVComponent
         closed="closed"

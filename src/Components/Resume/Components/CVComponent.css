@@ -10,7 +10,38 @@
   animation-name: closeAcc;
   animation-duration: 0.5s;
 }
-
+.cv-headline {
+  display: flex;
+  transition: 1s;
+}
+.cv-headline:hover {
+  color: #fbaf00;
+}
+.cv-headline:hover .Chevron:before {
+  border-top-color: #fbaf00;
+}
+.cv-block {
+  margin-left: 40px;
+}
+.Chevron {
+  position: relative;
+  display: block;
+  height: 14px; /*height should be double border*/
+}
+.Chevron:before,
+.Chevron:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border: 7px solid transparent; /*adjust size*/
+}
+/* Replace all text `top` below with left/right/bottom to rotate the chevron */
+.Chevron:before {
+  top: 0.5em;
+  left: 0.5em;
+  border-top-color: #fff; /*Chevron Color*/
+  transition: 1s;
+}
 @keyframes openAcc {
   0% {
     max-height: 0px;
