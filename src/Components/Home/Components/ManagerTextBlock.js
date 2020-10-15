@@ -5,12 +5,14 @@ const ManagerTextBlock = (props) => {
   return(
     <div>
       <div className="manager-block animate">
-        <div className="arrow-left" onClick={props.back}>
-          <div className="line-left-1"></div>
-          <div className="line-left-2"></div>
+        <div className="arrow-container" onClick={props.back}>
+          <div className="arrow-left" >
+            <div className="line-left-1"></div>
+            <div className="line-left-2"></div>
+          </div>
         </div>
         <div className="home-text-block">
-          <h1 className="manager-headline">Hi, I'm Patrick Plue.<br/> A Manager and Teacher</h1>
+          <h1 className="manager-headline">Hi, I'm Patrick Plue.<br/> A Manager, A Teacher, A Student.</h1>
           <div className="manager-about-me">
             <p>
             Welcome to my portfolio,<br/>

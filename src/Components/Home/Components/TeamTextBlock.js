@@ -5,9 +5,11 @@ const TeamTextBlock = (props) => {
   return(
     <div>
       <div className="team-block animate">
-        <div className="arrow-left" onClick={props.back}>
-          <div className="line-left-1"></div>
-          <div className="line-left-2"></div>
+        <div className="arrow-container" onClick={props.back}>
+          <div className="arrow-left" >
+            <div className="line-left-1"></div>
+            <div className="line-left-2"></div>
+          </div>
         </div>
         <div className="home-text-block">
           <h1 className="team-headline">Hi, I'm Patrick Plue.<br/> A Teamplayer.</h1>
@@ -26,9 +28,11 @@ const TeamTextBlock = (props) => {
             </p>
           </div>
         </div>
-        <div className="arrow-right" onClick={props.next}>
-          <div className="line-right-1"></div>
-          <div className="line-right-2"></div>
+        <div className="arrow-container" onClick={props.next}>
+          <div className="arrow-right">
+            <div className="line-right-1"></div>
+            <div className="line-right-2"></div>
+          </div>
         </div>
       </div>
     </div>

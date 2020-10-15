@@ -22,9 +22,11 @@ const DevTextBlock = (props) => {
           </p>
         </div>
       </div>
-      <div className="arrow-right" onClick={props.next}>
-        <div className="line-right-1"></div>
-        <div className="line-right-2"></div>
+      <div className="arrow-container" onClick={props.next}>
+        <div className="arrow-right">
+          <div className="line-right-1"></div>
+          <div className="line-right-2"></div>
+        </div>
       </div>
       </div>
     </div>

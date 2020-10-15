@@ -10,3 +10,6 @@
   height: 10px !important;
   margin: 0 5px !important;
 }
+.MuiButton-label:hover{
+  color: #fbaf00;
+}
