@@ -8,6 +8,7 @@ import seeql from "../../Pictures/seeql.jpg"
 const Projects = () => {
   return (
     <div id="Projects">
+      <hr/>
       <h1>Projects</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi

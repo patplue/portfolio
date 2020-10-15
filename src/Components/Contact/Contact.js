@@ -7,6 +7,7 @@ import ContactLinks from './Components/ContactLinks';
 const Contact = () => {
   return (
     <div id="Contact">
+      <hr/>
       <h1>Contact</h1>
       <div className="contact-form-container">
         <ContactForm />

@@ -24,7 +24,7 @@ const ManagerTextBlock = (props) => {
             always applied my<span className="highlight"> Managing Skills</span> to ensure the best outcome for all 
             individuals concerned. Since I was able to get all these different vantage points 
             I'm sure that I can be a great addition to your team no matter 
-            in which position. I believe firmly that <span className="highlight">Comminication</span>, <span className="highlight">Patience</span> and 
+            in which position. I believe firmly that <span className="highlight">Communication</span>, <span className="highlight">Patience</span> and 
             <span className="highlight"> Empathy</span> will have a positive effect on coworkers regardless of position.
             </p>
           </div>

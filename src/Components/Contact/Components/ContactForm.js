@@ -80,7 +80,6 @@ const ContactForm = (props) => {
   });
   return (
     <div>
-      <h1>Shoot me a message</h1>
       <ThemeProvider theme={theme}>
         <form
           noValidate

@@ -39,6 +39,9 @@ p {
 .button-text {
   color: #fbaf00;
 }
+.button-container {
+  margin-bottom: 20px;
+}
 .progress-count {
   position: sticky;
   top: 10px;

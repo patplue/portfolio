@@ -31,7 +31,7 @@ const RadarChart = () => {
           "rgba(251, 175, 0,1)",
         ],
         borderWidth: 3,
-        data: [8, 6, 7, 5, 3],
+        data: [8, 6, 7, 6, 4],
       },
     ];
     ticks = {
@@ -42,10 +42,10 @@ const RadarChart = () => {
     };
   } else {
     logigOrCodeBtnText = "See my Coding Skills";
-    labels = ["Problem solving", "Logic", "Teamplayer", "Communication", "Me"];
+    labels = ["Problem solving", "Critical Thinking", "Teamplayer", "Communication", "Self-Awareness"];
     datasets = [
       {
-        label: "Level",
+        label: "Level of Confidence",
         backgroundColor: ["rgba(251, 175, 0,0)"],
         borderColor: [
           "rgba(251, 175, 0,1)",
@@ -55,7 +55,7 @@ const RadarChart = () => {
           "rgba(251, 175, 0,1)",
         ],
         borderWidth: 3,
-        data: [10, 10, 10, 10, 10],
+        data: [7, 7, 8, 9, 7],
       },
     ];
     ticks = {
@@ -90,10 +90,12 @@ const RadarChart = () => {
   };
   return (
     <div>
-      <Button onClick={logicOrCodeSet}>
-        <p className="button-text">{logigOrCodeBtnText}</p>
-      </Button>
       <Radar data={data} width={200} height={200} options={options} />
+      <div className="button-container">
+        <Button variant="outlined" color="primary" onClick={logicOrCodeSet}>
+          <p className="button-text">{logigOrCodeBtnText}</p>
+        </Button>
+      </div>
     </div>
   );
 };
