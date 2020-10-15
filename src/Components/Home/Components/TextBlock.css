@@ -89,6 +89,18 @@
 }
 @media only screen and (max-width: 767px) {
   .arrow-container {
-    display: none;
+    visibility: hidden;
+  }
+  .dev-block {
+    display: block;
+    width: 100%;
+  }
+  .team-block {
+    display: block;
+    width: 100%;
+  }
+  .manager-block {
+    display: block;
+    width: 100%;
   }
 }
