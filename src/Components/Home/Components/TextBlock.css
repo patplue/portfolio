@@ -9,17 +9,17 @@
 }
 .dev-about-me {
   text-align: left;
-  width: 60%;
+  width: 65%;
 }
 .team-about-me {
   text-align: center;
-  width: 60%;
+  width: 65%;
   margin: auto;
 }
 .manager-about-me {
   float: right;
   text-align: right;
-  width: 60%;
+  width: 65%;
 }
 .dev-block {
   margin-top: 5em;
@@ -131,17 +131,18 @@
   }
   .dev-block {
     margin-top: -10px;
-    display: block;
+    display: inline-block;
     width: 100%;
   }
   .team-block {
     margin-top: -10px;
-    display: block;
+    display: inline-block;
     width: 100%;
   }
   .manager-block {
     margin-top: -10px;
-    display: block;
+    display: inline-block;
     width: 100%;
+
   }
 }

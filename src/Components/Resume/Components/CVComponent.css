@@ -11,6 +11,7 @@
   animation-duration: 0.5s;
 }
 .cv-headline {
+  max-width: 100%;
   display: flex;
   transition: 1s;
 }
@@ -26,20 +27,19 @@
 .Chevron {
   position: relative;
   display: block;
-  height: 14px; /*height should be double border*/
+  height: 14px;
 }
 .Chevron:before,
 .Chevron:after {
   position: absolute;
   display: block;
   content: "";
-  border: 7px solid transparent; /*adjust size*/
+  border: 7px solid transparent;
 }
-/* Replace all text `top` below with left/right/bottom to rotate the chevron */
 .Chevron:before {
   top: 0.5em;
   left: 0.5em;
-  border-top-color: #fff; /*Chevron Color*/
+  border-top-color: #fff; 
   transition: 1s;
 }
 @keyframes openAcc {

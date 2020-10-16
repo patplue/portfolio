@@ -21,6 +21,13 @@
   top: 75px;
   z-index: -5;
 }
+@media only screen and (max-width: 1024px) {
+  .home-container {
+    min-height: 10vh;
+  }
+}
 @media only screen and (max-width: 768px) {
-
+  .home-container {
+    min-height: 82vh;
+  }
 }

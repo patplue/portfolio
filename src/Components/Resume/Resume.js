@@ -8,10 +8,13 @@ const Resume = () => {
     <div id="Resume">
       <hr />
       <h1>Resume</h1>
-      <p>
+      <p className="resume-text-block">
         So you are able to get a quick overview of my{" "}
         <span className="highlight"> Skillset</span> here are some of my
-        previous Employments. If this caught your Interest please send me a{" "}
+        previous Employments. <br />
+        This is here to create a top level overview for you to see how I aquired
+        my <span className="highlight"> Skills</span>. <br /> If this caught
+        your Interest please send me a{" "}
         <a href="#Contact" className="highlight">
           Message
         </a>{" "}
@@ -23,9 +26,8 @@ const Resume = () => {
         location="Waldgourmet GmbH"
         position="Front-End Developer"
         description={[
-          <span>
-            As the Front-End Developer I was responsible for planning and
-            programming the
+          <span className="resume-desc">
+            I was responsible for planning and programming the
             <span className="highlight"> look </span> and
             <span className="highlight"> feel </span>
             of the entire project.
@@ -39,7 +41,7 @@ const Resume = () => {
         location="HelloFresh SE"
         position="It-Support Engineer & Office Manager"
         description={[<span>test test etst</span>]}
-        dates="2020/04-Today"
+        dates="2018/09-2019/11"
       />
       <CVComponent
         closed="closed"
@@ -47,11 +49,15 @@ const Resume = () => {
         location="GameStop Deutschland GmbH"
         position="Store Manager"
         description={[
-          "As the Front-End Dev i was responsible for the",
-          <span className="highlight"> look</span>,
-          " and feel of the projects when it cam to user interactions",
+          <span>
+            I was in charge of running the{" "}
+            <span className="highlight">Daily Business</span> as well as{" "}
+            <span className="highlight">Staffplanning</span>. The main focus was{" "}
+            <span className="highlight">Managing</span> the team to ensure best
+            performance on all accounts.
+          </span>,
         ]}
-        dates="2020/04-Today"
+        dates="2015-2018"
       />
       <RadarChart />
     </div>

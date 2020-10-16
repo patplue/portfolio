@@ -23,14 +23,14 @@ const Projects = () => {
         cum commodi at magnam aut, sequi officia corporis.
       </p>
       <Grid container spacing={3}>
-        <Grid item lg={6} xs={12}>
+        <Grid item lg={6} md={6} sm={6} xs={12}>
           <ProjectCard
             location="Alma"
             info="something about the job"
             pic={alma}
           />
         </Grid>
-        <Grid item lg={6} xs={12}>
+        <Grid item lg={6} md={6} sm={6} xs={12}>
           <ProjectCard
             location="SeeQL"
             info="something about the job"

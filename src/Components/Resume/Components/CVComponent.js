@@ -26,9 +26,9 @@ const CVComponent = (props) => {
   };
   return (
     <div>
-      <h3 onClick={OpenAccordionSet} className="cv-headline">
-        • {props.location} <i class="Chevron"></i>
-      </h3>
+      <p onClick={OpenAccordionSet} className="cv-headline">
+        <strong>• {props.location}</strong> <i class="Chevron"></i>
+      </p>
       <div className={props.id + " " + props.closed}>
         <div className="cv-block">
           <p>
@@ -43,7 +43,7 @@ const CVComponent = (props) => {
           </p>
           <p>
             <span className="highlight">• </span>
-            <strong>Time of Employment:</strong>
+            <strong>Time of Employment: </strong>
             {props.dates}
           </p>
         </div>
@@ -53,3 +53,6 @@ const CVComponent = (props) => {
 };
 
 export default CVComponent;
+
+
+
