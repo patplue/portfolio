@@ -37,9 +37,11 @@ const CVComponent = (props) => {
             <span className="highlight">{props.position}</span>
           </p>
           <p>
-            <span className="highlight">• </span>
-            <strong>Description: </strong>
-            {props.description}
+            <div className="cv-desc">
+              <span className="highlight">• </span>
+              <strong>Description:</strong>
+              <div className="cv-desc-text">{props.description}</div>
+            </div>
           </p>
           <p>
             <span className="highlight">• </span>
@@ -53,6 +55,3 @@ const CVComponent = (props) => {
 };
 
 export default CVComponent;
-
-
-
