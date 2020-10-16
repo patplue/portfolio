@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Radar } from "react-chartjs-2";
 import Button from "@material-ui/core/Button";
+import "./RadarChart.css"
 
 const RadarChart = () => {
   const [locigOrCode, setLogicOrCode] = useState(false);
@@ -96,7 +97,9 @@ const RadarChart = () => {
   };
   return (
     <div>
-      <Radar data={data} width={200} height={200} options={options} />
+      <div className="radar-container">
+        <Radar data={data} width={350} height={350} options={options} />
+      </div>
       <div className="button-container">
         <Button variant="outlined" color="primary" onClick={logicOrCodeSet}>
           <p className="button-text">{logigOrCodeBtnText}</p>
