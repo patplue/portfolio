@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Radar } from "react-chartjs-2";
 import Button from "@material-ui/core/Button";
-import "./RadarChart.css"
+import "./RadarChart.css";
 
 const RadarChart = () => {
   const [locigOrCode, setLogicOrCode] = useState(false);
@@ -22,7 +22,7 @@ const RadarChart = () => {
     labels = ["HTML", "CSS", "JavaScript", "React.js", "Rails"];
     datasets = [
       {
-        label: "Level of Experince",
+        label: "Level of Confidence",
         backgroundColor: ["rgba(251, 175, 0,0)"],
         borderColor: [
           "rgba(251, 175, 0,1)",
@@ -32,15 +32,9 @@ const RadarChart = () => {
           "rgba(251, 175, 0,1)",
         ],
         borderWidth: 3,
-        data: [8, 6, 7, 6, 4],
+        data: [6, 6, 6, 6, 5],
       },
     ];
-    ticks = {
-      suggestedMin: 0,
-      suggestedMax: 10,
-      stepSize: 1,
-      showLabelBackdrop: false,
-    };
   } else {
     logigOrCodeBtnText = "See my Coding Skills";
     labels = [
@@ -65,12 +59,6 @@ const RadarChart = () => {
         data: [7, 7, 8, 9, 7],
       },
     ];
-    ticks = {
-      suggestedMin: 0,
-      suggestedMax: 10,
-      stepSize: 1,
-      showLabelBackdrop: false,
-    };
   }
   const data = {
     labels: labels,
@@ -83,12 +71,20 @@ const RadarChart = () => {
     maintainAspectRatio: false,
     scale: {
       angleLines: {
-        display: false,
+        display: true,
+        color: "rgba(111, 111, 111, 1)",
       },
       gridLines: {
         color: "rgba(111, 111, 111, 1)",
       },
-      ticks: ticks,
+      ticks: {
+        suggestedMin: 0,
+        suggestedMax: 10,
+        stepSize: 2,
+        showLabelBackdrop: true,
+        backdropColor: "#302c2c",
+        fontColor: "rgb(255,255,255)",
+      },
       pointLabels: {
         fontSize: 14,
         fontColor: "#FFF",
