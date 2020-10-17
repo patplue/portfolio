@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
               </div>
             </div>
             <div className="desc-section" contenteditable>
-              <p>Quick explanation about the project. Tap me to see more.</p>
+              <p>{props.desc}</p>
             </div>
           </div>
         </FrontSide>

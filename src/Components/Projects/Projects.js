@@ -11,33 +11,36 @@ const Projects = () => {
       <hr />
       <h1>Projects</h1>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-        architecto iure dolore in magnam labore laboriosam voluptas libero
-        consequuntur molestiae, accusantium nesciunt nostrum voluptatum a error
-        aliquam maxime ducimus quia. Amet, officia tempore dolore rem est
-        quisquam eum quasi ea nobis eos doloribus! Placeat et eum adipisci
-        necessitatibus laboriosam deserunt veritatis. Placeat commodi sit quam
-        deleniti. Nihil provident ipsa aliquam. Explicabo culpa repellat quam in
-        totam, sed, incidunt molestias necessitatibus quasi voluptas deleniti?
-        Temporibus expedita ratione ipsam aspernatur ipsa, quia libero dolorem
-        cum commodi at magnam aut, sequi officia corporis.
+        Over the course of 2020 I went from a complete beginner to a confident
+        Developer that uses all the tools at his disposal to create UX/UI that
+        makes it easy for people to interact wit a product. In this section i
+        want to show off some of the prohects i was apart of since I started my
+        carrer. If you have any questions about the projects just send me a{" "}
+        <a href="#Contact" className="highlight">
+          Message
+        </a>{" "}
+        and we can talk about the details.
       </p>
-      <Grid container spacing={3}>
-        <Grid item lg={6} md={6} sm={6} xs={12}>
-          <ProjectCard
-            location="Alma"
-            info="something about the job"
-            pic={alma}
-          />
+      <div className="card-block">
+        <Grid container spacing={3}>
+          <Grid item lg={6} md={6} sm={6} xs={12}>
+            <ProjectCard
+              location="Alma"
+              desc={[<span>A shop platform funded by Waldgourmet GmbH </span>]}
+              info={[<span>check check </span>]}
+              pic={alma}
+            />
+          </Grid>
+          <Grid item lg={6} md={6} sm={6} xs={12}>
+            <ProjectCard
+              location="SeeQL"
+              desc={[<span>check check </span>]}
+              info={[<span>check check </span>]}
+              pic={seeql}
+            />
+          </Grid>
         </Grid>
-        <Grid item lg={6} md={6} sm={6} xs={12}>
-          <ProjectCard
-            location="SeeQL"
-            info="something about the job"
-            pic={seeql}
-          />
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 };

@@ -2,8 +2,14 @@
   margin: 20px;
   min-height: 100vh;
 }
+.card-block {
+  margin-top: 50px;
+}
 @media only screen and (max-width: 1024px) {
   #Projects {
     min-height: 10vh;
+  }
+  .card-block {
+    margin-top: 30px;
   }
 }

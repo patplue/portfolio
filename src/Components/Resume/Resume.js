@@ -47,7 +47,16 @@ const Resume = () => {
         id="Hellofresh"
         location="HelloFresh SE"
         position="It-Support Engineer & Office Manager"
-        description={[<span></span>]}
+        description={[
+          <span>
+            As an IT Engineer my main job was to insure that the workforce is
+            equipped with working hardware to work to their fullest potencial. I
+            was also in charge of GSuite and VPN account management. As Office
+            Manager i was in charge of ensuring that the office space was used
+            to its full potencial as well as taking care of external guests in
+            the office and making sure that C-Level events always went flawless.
+          </span>,
+        ]}
         dates="2018/09-2019/11"
       />
       <CVComponent
