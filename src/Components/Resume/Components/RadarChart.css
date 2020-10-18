@@ -1,4 +1,5 @@
-.radar-container{
+.radar-container {
   width: 100%;
+  margin: auto;
   height: 41vh;
 }

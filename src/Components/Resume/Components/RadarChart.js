@@ -38,11 +38,11 @@ const RadarChart = () => {
   } else {
     logigOrCodeBtnText = "See my Coding Skills";
     labels = [
-      "Problem solving",
-      "Critical Thinking",
-      "Teamplayer",
-      "Communication",
-      "Self-Awareness",
+      ["Problem", "solving"],
+      ["Critical", "Thinking"],
+      ["Teamplayer"],
+      ["Communication"],
+      ["Self", "Awareness"],
     ];
     datasets = [
       {
@@ -92,7 +92,7 @@ const RadarChart = () => {
     },
   };
   return (
-    <div>
+    <div className="radar-component-box">
       <div className="radar-container">
         <Radar data={data} width={350} height={350} options={options} />
       </div>
