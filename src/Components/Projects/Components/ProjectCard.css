@@ -27,7 +27,7 @@
   background-color: rgb(48, 44, 44);
 }
 .card-desc {
-  position: absolute;
+  position: relative;
   color: #fbaf00;
   top: 0;
   left: 20px;
