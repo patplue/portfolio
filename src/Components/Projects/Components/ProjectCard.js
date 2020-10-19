@@ -22,8 +22,12 @@ const ProjectCard = (props) => {
             </div>
           </div>
         </FrontSide>
-        <BackSide style={{ backgroundColor: "#175852" }}>
-          <p>{props.info}</p>
+        <BackSide>
+          <div className="project-card-back">
+            <p className="project-card-back-text">
+              {props.info}
+            </p>
+          </div>
         </BackSide>
       </Flippy>
     </div>

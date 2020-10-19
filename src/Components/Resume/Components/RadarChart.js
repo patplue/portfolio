@@ -16,7 +16,6 @@ const RadarChart = () => {
   let logigOrCodeBtnText = "";
   let labels = [];
   let datasets = [];
-  let ticks = {};
   if (locigOrCode === false) {
     logigOrCodeBtnText = "See my Personal Skills";
     labels = ["HTML", "CSS", "JavaScript", "React.js", "Rails"];
@@ -38,7 +37,7 @@ const RadarChart = () => {
   } else {
     logigOrCodeBtnText = "See my Coding Skills";
     labels = [
-      ["Problem", "solving"],
+      ["Problem solving"],
       ["Critical", "Thinking"],
       ["Teamplayer"],
       ["Communication"],

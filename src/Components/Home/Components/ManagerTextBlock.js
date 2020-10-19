@@ -20,25 +20,15 @@ const ManagerTextBlock = (props) => {
             <p>
               Welcome to my portfolio,
               <br />
-              <br />I was able to gather{" "}
-              <span className="highlight"> Experience</span> in a lot of
-              different scenarios. For example during my 10 year{" "}
-              <span className="highlight"> Career</span> in retail I was in
-              every position from a
-              <span className="highlight"> Retail Clerk</span> all the way up to
-              the position of the
-              <span className="highlight"> Store Manager </span>
-              leading a successful team. I was certified to
-              <span className="highlight"> Teach</span> apprentices and always
-              applied my<span className="highlight"> Managing Skills</span> to
+              <br />I gathered Experience in a lot of different positions.
+              During my 10 year Career in retail I made my way up from a Retail
+              Clerk to Store Manager leading a successful team. I was certified
+              to Teach apprentices and always applied my Managing Skills to
               ensure the best outcome for all individuals concerned. Since I was
               able to get all these different vantage points I'm sure that I can
               be a great addition to your team no matter in which position. I
-              believe firmly that{" "}
-              <span className="highlight">Communication</span>,{" "}
-              <span className="highlight">Patience</span> and
-              <span className="highlight"> Empathy</span> will have a positive
-              effect on coworkers regardless of position.
+              believe firmly that Communication, Patience and Empathy will have
+              a positive effect on coworkers regardless of position.
             </p>
           </div>
         </div>
