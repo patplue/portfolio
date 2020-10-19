@@ -51,26 +51,26 @@ p {
   animation-name: blend-in;
 }
 .animate-out {
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-name: blend-out;
 }
 
 @keyframes blend-in {
   from {
-    visibility: 0;
+    opacity: 0;
   }
 
   to {
-    visibility: 100%;
+    opacity: 100%;
   }
 }
 @keyframes blend-out {
   from {
-    visibility: 100%;
+    opacity: 100%;
   }
 
   to {
-    visibility: 0;
+    opacity: 0;
   }
 }
 @media only screen and (max-width: 767px) {

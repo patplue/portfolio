@@ -32,11 +32,7 @@ const Projects = () => {
                 <span>
                   A <span className="highlight">E-Commerce</span> and{" "}
                   <span className="highlight">Software</span> platform founded
-                  by{" "}
-                  <a href="https://www.waldgourmet.de/" className="highlight">
-                    Waldgourmet GmbH
-                  </a>{" "}
-                  to help small food production companies.{" "}
+                  by Waldgourmet GmbH.{" "}
                   <span className="highlight">Tap card to see more.</span>
                 </span>,
               ]}

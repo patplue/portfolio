@@ -13,20 +13,18 @@ const ProjectCard = (props) => {
           <div className="sidebar-container">
             <div className="front-side-container">
               <div className="sidebar" contenteditable>
-                <h3 className="card-desc">{props.location}</h3>
                 <img src={props.pic} alt="placeholder" className="card-img" />
               </div>
             </div>
             <div className="desc-section" contenteditable>
+              <h4 className="card-desc">{props.location}</h4>
               <p>{props.desc}</p>
             </div>
           </div>
         </FrontSide>
         <BackSide>
           <div className="project-card-back">
-            <p className="project-card-back-text">
-              {props.info}
-            </p>
+            <p className="project-card-back-text">{props.info}</p>
           </div>
         </BackSide>
       </Flippy>
