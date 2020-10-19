@@ -22,13 +22,20 @@ const TeamTextBlock = (props) => {
               <br />
               <br />
               Over the course of my professional career I worked in a variety of
-              Teams, each functioning differently. I believe the climate of a
-              Team is a result of different individuals trying to achieve the
-              same Goal. As a team member I learned to actively communicate to
-              comprehend that common goal as well as each member's approach
-              towards it. I always keep the Goal in focus but I never let my
-              Team out of sight, because only a good functioning Team can exceed
-              expectations.
+              <span className="highlight"> Teams</span>, each functioning
+              differently. I believe the climate of a{" "}
+              <span className="highlight"> Team</span> is a result of different
+              individuals trying to achieve the same{" "}
+              <span className="highlight">Goal</span>. As a{" "}
+              <span className="highlight">Team </span>
+              member I learned to actively{" "}
+              <span className="highlight">Communicate</span> to comprehend that
+              common <span className="highlight">Goal</span> as well as each
+              member's approach towards it. I always keep the{" "}
+              <span className="highlight">Goal</span> in focus but I never let
+              my <span className="highlight">Team</span> out of sight, because
+              only a good functioning <span className="highlight">Team</span>{" "}
+              can exceed expectations.
             </p>
           </div>
         </div>

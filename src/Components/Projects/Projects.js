@@ -11,8 +11,10 @@ const Projects = () => {
       <hr />
       <h1>Projects</h1>
       <p>
-        Over the course of 2020 I went from a complete beginner to a confident
-        Developer that uses all the tools at his disposal to create UX/UI that
+        Over the course of 2020 I went from a complete{" "}
+        <span className="highlight">Beginner</span> to a confident
+        <span className="highlight"> Developer</span> that uses all the tools at
+        his disposal to create <span className="highlight">UX/UI</span> that
         makes it easy for people to interact with a product. Here I want to
         present some of the projects I was a part of since I started my career.
         If you have any questions about the projects please send me a{" "}
@@ -28,18 +30,33 @@ const Projects = () => {
               location="Alma"
               desc={[
                 <span>
-                  A E-commerce and software platform founded by Waldgourmet GmbH
-                  to help small food production companies. Tap card to see more.
+                  A <span className="highlight">E-Commerce</span> and{" "}
+                  <span className="highlight">Software</span> platform founded
+                  by{" "}
+                  <a href="https://www.waldgourmet.de/" className="highlight">
+                    Waldgourmet GmbH
+                  </a>{" "}
+                  to help small food production companies.{" "}
+                  <span className="highlight">Tap card to see more.</span>
                 </span>,
               ]}
               info={[
                 <span>
-                  The customer facing E-Commerce part of the project was built
-                  in Ruby on Rails. I used ERB and SCSS for styling and content
-                  building of the Front-End as well as jQuery and Javascript for
-                  interactive purposes. The Back-end was built in Ruby with a
-                  MySQL Database. The second part of the project was a
-                  production facing app written in React.js. Unfortunately, I
+                  The customer facing{" "}
+                  <span className="highlight">E-Commerce</span> part of the
+                  project was built in{" "}
+                  <span className="highlight">Ruby on Rails</span>. I used{" "}
+                  <span className="highlight">ERB </span> and{" "}
+                  <span className="highlight">SCSS</span> for styling and
+                  content building of the{" "}
+                  <span className="highlight">Front-End</span> as well as{" "}
+                  <span className="highlight">jQuery </span>
+                  and <span className="highlight">Vanilla JS</span> for
+                  interactive purposes. The{" "}
+                  <span className="highlight">Back-end</span> was built in{" "}
+                  <span className="highlight">Ruby </span>
+                  production facing app written in{" "}
+                  <span className="highlight">React.js</span>. Unfortunately, I
                   can't share any links to the project since it is still
                   ongoing. <br />
                   Link:{" "}
@@ -56,21 +73,33 @@ const Projects = () => {
               location="SeeQL"
               desc={[
                 <span>
-                  This Database visualisation tool was my final project at
-                  LeWagon. Tap card to see more.
+                  This{" "}
+                  <span className="highlight">Database Visualisation Tool</span>{" "}
+                  was my final project at LeWagon.{" "}
+                  <span className="highlight">Tap card to see more.</span>
                 </span>,
               ]}
               info={[
                 <span>
-                  This project was pitched and managed by me in the last two
-                  weeks of the bootcamp. With SeeQL you are able to set up a
-                  team of collaborators and connect SeeQL to your MySQL or
-                  PostgreSQL database. It will generate a visual Map of your
-                  database where you can add tables, columns and rows and
-                  comment on them. In that way planning your Database becomes an
-                  easy group task. It was written in Ruby on Rails and the
-                  Front-End was done completely in ERB, SCSS and Vanilla JS.{" "}
-                  <br />
+                  This project was <span className="highlight">Pitched</span>{" "}
+                  and <span className="highlight">Pitched</span> by me in the
+                  last two weeks of the bootcamp. With{" "}
+                  <span className="highlight">SeeQL</span> you are able to set
+                  up a team of collaborators and connect{" "}
+                  <span className="highlight">SeeQL</span> to your{" "}
+                  <span className="highlight">MySQL</span> or{" "}
+                  <span className="highlight">PostgreSQL </span>
+                  <span className="highlight">Database</span>. It will generate
+                  a visual Map of your{" "}
+                  <span className="highlight">Database</span> where you can add
+                  tables, columns and rows and comment on them. In that way
+                  planning your <span className="highlight">Database</span>{" "}
+                  becomes an easy group task. It was written in{" "}
+                  <span className="highlight">Ruby on Rails</span> and the
+                  <span className="highlight">Front-End</span> was done
+                  completely in <span className="highlight">ERB</span>,{" "}
+                  <span className="highlight">SCSS</span> and{" "}
+                  <span className="highlight">Vanilla JS</span>. <br />
                   Link:{" "}
                   <a href="https://www.seeql.dev/" className="highlight">
                     SeeQL

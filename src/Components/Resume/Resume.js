@@ -9,9 +9,10 @@ const Resume = () => {
       <hr />
       <h1>Resume</h1>
       <p className="resume-text-block">
-        To get a quick overview of my Skillset and how I acquired it, here are
-        some of my most recent Employments. If this caught your interest please
-        send me a{" "}
+        To get a quick overview of my{" "}
+        <span className="highlight">Skillset</span> and how I acquired it, here
+        are some of my most recent Employments. If this caught your interest
+        please send me a{" "}
         <a href="#Contact" className="highlight">
           Message
         </a>{" "}
@@ -25,12 +26,18 @@ const Resume = () => {
         position="Front-End Developer"
         description={[
           <span>
-            I was responsible for planning and programming the look and feel of
-            the entire project. On a daily basis I used HTML, CSS, JavaScript
-            and React to generate the best possible UI/UX for the project. We
-            were applying a Scrum approach to our work and kept the team close
-            and always well informed. Unfortunately, I am unable to share
-            details from the project as it is still ongoing.
+            I was responsible for planning and programming the{" "}
+            <span className="highlight">Look</span> and{" "}
+            <span className="highlight">Feel</span> of the entire project. On a
+            daily basis I used <span className="highlight">HTML</span>,{" "}
+            <span className="highlight">CSS</span>,{" "}
+            <span className="highlight">JavaScript</span> and{" "}
+            <span className="highlight">React</span> to generate the best
+            possible <span className="highlight">UI/UX</span> for the project.
+            We were applying a <span className="highlight">Scrum</span> approach
+            to our work and kept the team close and always well informed.
+            Unfortunately, I am unable to share details from the project as it
+            is still ongoing.
           </span>,
         ]}
         dates="2020/04-Today"
@@ -42,13 +49,14 @@ const Resume = () => {
         position="It-Support Engineer & Office Manager"
         description={[
           <span>
-            As an IT Engineer my main responsibility was to provide the
-            workforce with the hardware and equipment, which would optimally
-            support their work. I was also in charge of GSuite and VPN account
-            management. As an Office Manager I was ensuring that the office
-            space was used to its full potential. I was taking care of external
-            guests in the office and making sure that C-Level events always went
-            flawlessly.
+            As an <span className="highlight">IT Engineer</span> my main
+            responsibility was to provide the workforce with the hardware and
+            equipment, which would optimally support their work. I was also in
+            charge of GSuite and VPN account management. As an{" "}
+            <span className="highlight">Office Manager</span> I was ensuring
+            that the office space was used to its full potential. I was taking
+            care of external guests in the office and making sure that C-Level
+            events always went flawlessly.
           </span>,
         ]}
         dates="2018/09-2019/11"
@@ -60,10 +68,15 @@ const Resume = () => {
         position="Store Manager"
         description={[
           <span>
-            I was in charge of running the Daily Business as well as Staff
-            Planning. The main focus was Managing the team to ensure best
-            performance on all accounts, which involved also Interviewing and
-            Hiring of new staff as well as Training newcomers and Teaching
+            I was in charge of running the{" "}
+            <span className="highlight">Daily Business</span> as well as{" "}
+            <span className="highlight">Staff Planning</span>. The main focus
+            was <span className="highlight">Managing</span> the team to ensure
+            best performance on all accounts, which involved also{" "}
+            <span className="highlight">Interviewing</span>
+            and <span className="highlight">Hiring</span> of new staff as well
+            as <span className="highlight">Hiring</span> newcomers and{" "}
+            <span className="highlight">Teaching</span>
             apprentices.
           </span>,
         ]}
