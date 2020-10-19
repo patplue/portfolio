@@ -61,12 +61,12 @@ p {
   }
 
   to {
-    opacity: 100%;
+    opacity: 99.9%;
   }
 }
 @keyframes blend-out {
   from {
-    opacity: 100%;
+    opacity: 99.9%;
   }
 
   to {

@@ -78,7 +78,7 @@ const Projects = () => {
               info={[
                 <span>
                   This project was <span className="highlight">Pitched</span>{" "}
-                  and <span className="highlight">Pitched</span> by me in the
+                  and <span className="highlight">Managed</span> by me in the
                   last two weeks of the bootcamp. With{" "}
                   <span className="highlight">SeeQL</span> you are able to set
                   up a team of collaborators and connect{" "}
