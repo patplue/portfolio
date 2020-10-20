@@ -18,7 +18,7 @@ const App = () => {
     document.querySelector("#splash-group").classList.add("animate-out");
     window.setTimeout(() => {
       setLoadingState(true);
-    }, 500);
+    }, 1000);
   };
 
   if (loadingState === false) {

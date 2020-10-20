@@ -45,3 +45,14 @@
     margin: 10px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .sidebar-container {
+    display: block;
+  }
+  .card-img {
+    margin-bottom: -4px;
+    border-radius: 10px 10px 0 0;
+    border-right: none;
+    border-bottom: 1px solid #fbaf00;
+  }
+}

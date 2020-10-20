@@ -56,7 +56,10 @@ const Projects = () => {
                   can't share any links to the project since it is still
                   ongoing. <br />
                   Link:{" "}
-                  <a href="https://www.waldgourmet.de/" className="highlight">
+                  <a
+                    href="https://www.waldgourmet.de/"
+                    target="_blank"
+                    className="highlight">
                     Waldgourmet
                   </a>
                 </span>,
@@ -97,7 +100,10 @@ const Projects = () => {
                   <span className="highlight">SCSS</span> and{" "}
                   <span className="highlight">Vanilla JS</span>. <br />
                   Link:{" "}
-                  <a href="https://www.seeql.dev/" className="highlight">
+                  <a
+                    href="https://www.seeql.dev/"
+                    target="_blank"
+                    className="highlight">
                     SeeQL
                   </a>
                 </span>,

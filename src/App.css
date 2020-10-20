@@ -51,7 +51,7 @@ p {
   animation-name: blend-in;
 }
 .animate-out {
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-name: blend-out;
 }
 
@@ -61,12 +61,12 @@ p {
   }
 
   to {
-    opacity: 99.9%;
+    opacity: 1;
   }
 }
 @keyframes blend-out {
   from {
-    opacity: 99.9%;
+    opacity: 1;
   }
 
   to {
