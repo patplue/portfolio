@@ -59,6 +59,7 @@ const Projects = () => {
                   <a
                     href="https://www.waldgourmet.de/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="highlight">
                     Waldgourmet
                   </a>
@@ -103,6 +104,7 @@ const Projects = () => {
                   <a
                     href="https://www.seeql.dev/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="highlight">
                     SeeQL
                   </a>
