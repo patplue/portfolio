@@ -6,6 +6,9 @@ import alma from "../../Pictures/alma.jpg";
 import seeql from "../../Pictures/seeql.jpg";
 
 const Projects = () => {
+  const generateKey = (pre) => {
+    return `${pre}_${new Date().getTime()}`;
+  };
   return (
     <div id="Projects">
       <hr />
@@ -29,7 +32,7 @@ const Projects = () => {
             <ProjectCard
               location="Alma"
               desc={[
-                <span>
+                <span key={generateKey("alma")}>
                   A <span className="highlight">E-Commerce</span> and{" "}
                   <span className="highlight">Software</span> platform founded
                   by Waldgourmet GmbH.{" "}
@@ -37,7 +40,7 @@ const Projects = () => {
                 </span>,
               ]}
               info={[
-                <span>
+                <span key={generateKey("almainfo")}>
                   The customer facing{" "}
                   <span className="highlight">E-Commerce</span> part of the
                   project was built in{" "}
@@ -72,7 +75,7 @@ const Projects = () => {
             <ProjectCard
               location="SeeQL"
               desc={[
-                <span>
+                <span key={generateKey("seeql")}>
                   This{" "}
                   <span className="highlight">Database Visualisation Tool</span>{" "}
                   was my final project at LeWagon.{" "}
@@ -80,7 +83,7 @@ const Projects = () => {
                 </span>,
               ]}
               info={[
-                <span>
+                <span key={generateKey("seeqlinfo")}>
                   This project was <span className="highlight">Pitched</span>{" "}
                   and <span className="highlight">Managed</span> by me in the
                   last two weeks of the bootcamp. With{" "}

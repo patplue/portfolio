@@ -12,11 +12,11 @@ const ProjectCard = (props) => {
         <FrontSide>
           <div className="sidebar-container">
             <div className="front-side-container">
-              <div className="sidebar" contenteditable>
+              <div className="sidebar" contentditable="true">
                 <img src={props.pic} alt="placeholder" className="card-img" />
               </div>
             </div>
-            <div className="desc-section" contenteditable>
+            <div className="desc-section" contentditable="true">
               <h4 className="card-desc">{props.location}</h4>
               <p>{props.desc}</p>
             </div>

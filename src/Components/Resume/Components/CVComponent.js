@@ -4,6 +4,7 @@ import "./CVComponent.css";
 
 const CVComponent = (props) => {
   let [openAccordion, setOpenAccordion] = useState(false);
+
   const OpenAccordionSet = () => {
     if (openAccordion === true) {
       setOpenAccordion(false);
@@ -27,7 +28,7 @@ const CVComponent = (props) => {
   return (
     <div>
       <p onClick={OpenAccordionSet} className="cv-headline">
-        <strong>• {props.location}</strong> <i class="Chevron"></i>
+        <strong>• {props.location}</strong> <i className="Chevron"></i>
       </p>
       <div className={props.id + " " + props.closed}>
         <div className="cv-block">
@@ -37,11 +38,11 @@ const CVComponent = (props) => {
             <span className="highlight">{props.position}</span>
           </p>
           <p>
-            <div className="cv-desc">
+            <span className="cv-desc">
               <span className="highlight">• </span>
               <strong>Description:</strong>
-              <div className="cv-desc-text">{props.description}</div>
-            </div>
+              <span className="cv-desc-text">{props.description}</span>
+            </span>
           </p>
           <p>
             <span className="highlight">• </span>

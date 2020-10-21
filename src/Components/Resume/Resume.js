@@ -4,6 +4,9 @@ import RadarChart from "./Components/RadarChart";
 import "./Resume.css";
 
 const Resume = () => {
+  const generateKey = (pre) => {
+    return `${pre}_${new Date().getTime()}`;
+  };
   return (
     <div id="Resume">
       <hr />
@@ -25,7 +28,7 @@ const Resume = () => {
         location="Waldgourmet GmbH"
         position="Front-End Developer"
         description={[
-          <span>
+          <span key={generateKey("waldgourmet")}>
             I was responsible for planning and programming the{" "}
             <span className="highlight">Look</span> and{" "}
             <span className="highlight">Feel</span> of the entire project. On a
@@ -48,7 +51,7 @@ const Resume = () => {
         location="HelloFresh SE"
         position="It-Support Engineer & Office Manager"
         description={[
-          <span>
+          <span key={generateKey("hellofresh")}>
             As an <span className="highlight">IT Engineer</span> my main
             responsibility was to provide the workforce with the hardware and
             equipment, which would optimally support their work. I was also in
@@ -67,16 +70,16 @@ const Resume = () => {
         location="GameStop Deutschland GmbH"
         position="Store Manager"
         description={[
-          <span>
+          <span key={generateKey("gamestop")}>
             I was in charge of running the{" "}
             <span className="highlight">Daily Business</span> as well as{" "}
             <span className="highlight">Staff Planning</span>. The main focus
             was <span className="highlight">Managing</span> the team to ensure
             best performance on all accounts, which involved also{" "}
-            <span className="highlight">Interviewing</span>
-            and <span className="highlight">Hiring</span> of new staff as well
-            as <span className="highlight">Hiring</span> newcomers and{" "}
-            <span className="highlight">Teaching</span>
+            <span className="highlight">Interviewing </span>
+            and <span className="highlight">Hiring </span> of new staff as well
+            as <span className="highlight">Hiring </span> newcomers and{" "}
+            <span className="highlight">Teaching </span>
             apprentices.
           </span>,
         ]}
