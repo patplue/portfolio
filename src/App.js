@@ -13,7 +13,10 @@ import "./App.css";
 import { Container } from "@material-ui/core";
 
 const App = () => {
-  console.log("%c Hi, I'm flattered that you took the time to check out my code. If you want to talk about it send me a message in throught contact form. ;)", 'color: #fbaf00; font-size: 25px');
+  console.log(
+    "%c Hi, I'm flattered that you took the time to check out my code. If you want to talk about it send me a message via contact form. ;)",
+    "color: #fbaf00; font-size: 25px"
+  );
   const [loadingState, setLoadingState] = useState(false);
   const loadingStateSet = () => {
     document.querySelector("#splash-group").classList.add("animate-out");
